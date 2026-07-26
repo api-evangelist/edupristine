@@ -1,7 +1,27 @@
 aid: edupristine
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/edupristine.png
 name: EduPristine
-description: 'EduPristine is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: edtech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'EduPristine is a Mumbai-based finance, accounting, and analytics training
+  institute founded in 2008, offering classroom and online certification-prep and
+  professional up-skilling programs. Its catalog spans financial modeling, CFA, FRM,
+  ACCA, US CPA and US CMA, business analytics and data science, digital marketing,
+  financial accounting (Big 4 aligned), and healthcare/medical coding. EduPristine
+  runs training centers across India alongside self-paced and instructor-led online
+  courses, and is part of Adtalem Global Education. Sector: edtech. No public developer
+  API or documented API surface was found during enrichment; the corporate website
+  sits behind a WAF that blocks automated discovery of a well-known or developer
+  surface.'
 url: https://raw.githubusercontent.com/api-evangelist/edupristine/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Edtech
+- Education
+- Training
+- Finance
+- Certification
+- Analytics
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/edupristine-domain-security.yml
 - type: Website
   url: http://www.edupristine.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
